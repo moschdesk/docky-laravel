@@ -7,7 +7,7 @@ The purpose of this image is to save build minutes, that is why, we, for example
 Another purpose is to help us to simplify our pipeline code.
 
 ## What's Included
-- [php:7.2.17](https://hub.docker.com/_/php) base on linux alpine
+- [php:7.2.17](https://hub.docker.com/_/php)
 - [composer](https://getcomposer.org/)
 - [hirak/prestissimo](https://github.com/hirak/prestissimo)
 - [deployer](https://deployer.org/)
