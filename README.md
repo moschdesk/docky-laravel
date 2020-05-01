@@ -15,7 +15,7 @@ Another purpose is to help us to simplify our pipeline code.
 
 ## Tobe added (in case we need it)
 - redis
-- *you decide*
+- ?
 
 
 ## Contributions
