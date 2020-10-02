@@ -13,11 +13,8 @@ RUN apk add --no-cache openssh-client\
     && composer clear-cache
 
 RUN apk add --no-cache mysql-client \
-    docker-php-ext-install mysqli pdo pdo_mysql \
-    docker-php-ext-enable pdo_mysql
-
-RUN apk --update --no-cache add libpng  \
-    libpng-dev \
-    docker-php-ext-install gd 
+    libpng libpng-dev
+    && docker-php-ext-install mysqli pdo pdo_mysql gd \
+    && docker-php-ext-enable pdo_mysql
 
 WORKDIR /app
