@@ -12,7 +12,7 @@ RUN apk add --no-cache openssh-client\
     && chmod +x /usr/local/bin/dep \
     && composer clear-cache
 
-RUN apk add --no-cache mysql-client libpng libpng-dev
+RUN apk add --no-cache mysql-client libpng libpng-dev \
     && docker-php-ext-install mysqli pdo pdo_mysql gd \
     && docker-php-ext-enable pdo_mysql
 
