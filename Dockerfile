@@ -2,7 +2,7 @@ FROM php:7.2.17-alpine
 
 LABEL Maintainer M.S.H <sholichul.huda@kly.id>
 
-RUN apk add update
+RUN apk update
 
 RUN apk add --no-cache openssh-client\
     && curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer \
